@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Bebella Modas</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <h1 class="title">Bebella Modas</h1>
+</header>
+
+<section class="hero">
+  <h2 class="hero-text">Elegância em cada detalhe</h2>
+</section>
+
+<section class="products">
+  <div class="product-card">
+    <div class="img-box"></div>
+    <h3>Vestido Vermelho Luxo</h3>
+    <p>R$ 129,90</p>
+    <button onclick="addToCart('Vestido Vermelho Luxo',129.90)">Adicionar</button>
+  </div>
+
+  <div class="product-card">
+    <div class="img-box"></div>
+    <h3>Blusa Fashion Preta</h3>
+    <p>R$ 79,90</p>
+    <button onclick="addToCart('Blusa Fashion Preta',79.90)">Adicionar</button>
+  </div>
+
+  <div class="product-card">
+    <div class="img-box"></div>
+    <h3>Calça Jeans Elegante</h3>
+    <p>R$ 149,90</p>
+    <button onclick="addToCart('Calça Jeans Elegante',149.90)">Adicionar</button>
+  </div>
+</section>
+
+<section class="cart">
+  <h2>Carrinho</h2>
+  <div id="cart-items"></div>
+  <p class="total">Total: R$ <span id="total">0.00</span></p>
+  <button class="checkout" onclick="checkout()">Finalizar com Mercado Pago</button>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
